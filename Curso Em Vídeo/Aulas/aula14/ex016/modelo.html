@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_modelo.css">
+    <title>Super Contador</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div id="dados">
+            <p>Início: <input type="number" name="text_início" id="text_início"></p>
+            <p>Fim: <input type="number" name="text_fim" id="text_fim"> </p>
+            <p>Passo: <input type="number" name="text_passo" id="text_passo"></p>
+            <p id="obs"><strong>Observação: caso você não coloque nenhum <br> 
+                valor no início, ele será considerado como 0.
+            </strong></p>
+            <p><input type="button" value="Contar" onclick="Contar()"></p>
+        </div>
+
+        <div id="resultado">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; thallentos</p>
+    </footer>
+    <script src="modelo_script.js"></script>
+</body>
+</html>

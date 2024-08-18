@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thallentos</title>
+    <style> /*comentário em CSS*/
+        body
+        {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1
+        {
+            color: rgb(71, 17, 121);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo!</h1> <!-- Comentário em HTML-->
+    <p>Você tem uma longa jornada pela frente</p>
+    <script> // parte de Javascript
+        /*
+        var n1 = Number(window.prompt('Digite o 1º número: '))
+            // ou Number.parseFloat() ou Number.parseInt()
+        var n2 = Number(window.prompt('Digite o 2º número: '))
+        var soma = n1 + n2
+        window.alert('A soma dos números é '+ soma)
+        */
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre (${n1} + ${n2}) = (${soma})`)
+            // tem que usar crase (shift + botão de acento)
+        var x = 'Javascript'
+        x.length // diz o tamanho da string
+        x.toUpperCase() // deixa tudo em maiúsculo
+        x.toLowerCase() // deixa tudo em minúsculo
+        /*
+            para passar algo para String se faz:
+            x é uma variável qualquer
+            String(x)
+            x.toString()
+        */
+    </script>
+</body>
+</html>

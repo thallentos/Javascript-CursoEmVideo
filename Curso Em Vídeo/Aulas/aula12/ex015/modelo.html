@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_modelo.css">
+    <title>Verificador de idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Ano do seu Nascimento:
+                <input type="number" name="text_ano_nascimento" id="text_ano_nascimento">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="homem" checked>
+                <label for="homem">Masculino</label>
+                <input type="radio" name="sexo" id="mulher">
+                <label for="mulher">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar_idade_sexo()">
+            </p>
+        </div>
+
+        <div id="resultado">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; thallentos</p>
+    </footer>
+    <script src="modelo_script.js"></script>
+</body>
+</html>

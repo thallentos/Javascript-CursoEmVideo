@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thallentos</title>
+    <style>
+        body
+        {
+            background-color: rgb(54, 139, 214);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id="mensagem">Clique em mim</div>
+    <script>
+        var paragrafo_2 = window.document.getElementsByTagName('p')[1]
+        /*olhar linha anterior
+        getElementByTagName) 
+        pega o elemento pelo nome da tag;
+
+        esse p[0] mostra que é o 2º parágrafo
+        */
+        var corpo = window.document.body
+        corpo.style.color = 'yellow'
+            // a cor das letras de body estão amarelas
+        paragrafo_2.style.color = 'white'
+            // a cor do 2º parágrafo está preta
+            // não ficou amarela, porque a tag
+            // <p> é mais específica do que a
+            // tag <body>
+        window.document.write('Está escrito assim no 2º parágrafo: ' + paragrafo_2.innerHTML)
+            // (innerText) mostra somente o que está escrito
+            // no objeto selecionado
+            // (innerHTML) mostra o que está escrito
+            // no objeto selecionado, assim como se ele
+            // está em itálico, negrito, etc
+
+            // teste com isso para ver a 
+            // tag <DOM> aparecendo no (innerHTML)
+                /*
+                window.alert(paragrafo_2.innerText)
+                window.alert(paragrafo_2.innerHTML)
+                */
+            /*
+            Outros Elements
+            getElementById() - seleciona o elemento pelo ID
+            getElementsByName() - seleciona pelo NOME
+            getElementsByClassName() - seleciona pelo NOME DA CLASSE
+            querySelector('') - isso está na linha 68
+            */
+
+            /*
+            Testar isso depois
+            var da_div = window.document.getElementById('mensagem')
+            da_div.style.background = 'green'
+            */
+                // a <div> da linha 20 está 
+                // com um ID como mensagem.
+                // Então eu selecionei esse ID
+                // e dei uma nova cor ao fundo dele 
+                // da_div.innerText = 'Mudei o texto'
+            var da_div = window.document.querySelector('div#mensagem')
+                // toda <div> é representada por (#)
+                // toda <class> é representada por (.)
+            da_div.style.color = 'red'
+            
+    </script>
+</body>
+</html>

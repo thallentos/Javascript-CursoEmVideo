@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_modelo.css">
+    <title>Analisador de Números</title>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Número (entre 1 e 100): 
+                <input type="number" name="num" id="text_num"> 
+                <input type="button" value="Adicionar" onclick="adicionar()">
+                <br><br><select name="text_lista" id="text_lista" size="6"></select>
+                <br><input type="button" value="Finalizar" onclick="finalizar()">
+                <input type="button" value="Como Resetar?" onclick="resetar()">
+            </p>
+        </div>
+        <div>
+            <p id="obs">
+                <strong>Observação: <br>:. Se o valor digitado for nulo ou 
+                igual a 0 será  <br>considerad0 o valor de 0</strong>
+            </p>
+        </div>
+
+        <div id="resultado">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; thallentos</p>
+    </footer>
+    <script src="modelo_script.js"></script>
+</body>
+</html>
